@@ -1,8 +1,17 @@
 pluginManagement {
-    repositories { google(); mavenCentral(); gradlePluginPortal() }
+    repositories {
+        maven("https://maven-central.storage-download.googleapis.com/maven2/")
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
 }
 dependencyResolutionManagement {
-    repositories { google(); mavenCentral() }
+    repositories {
+        maven("https://maven-central.storage-download.googleapis.com/maven2/")
+        google()
+        mavenCentral()
+    }
 }
 rootProject.name = "TimeUpKids"
 include(":app")
